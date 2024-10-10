@@ -37,7 +37,7 @@ reveal_type(func1, expected_text="(**kwargs: **TD2) -> None")
 
 
 def func2(v3: str, **kwargs: Unpack[TD1]) -> None:
-    pass
+    reveal_type(kwargs, expected_text="TD1")
 
 
 def func3():
